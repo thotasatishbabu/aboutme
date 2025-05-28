@@ -26,7 +26,7 @@ const Skills: React.FC = () => {
       category: 'Frontend Development',
       icon: <Code className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
       skills: [
-        { name: 'React', level: 95 },
+        { name: 'C++'},
         { name: 'TypeScript', level: 90 },
         { name: 'Vue.js', level: 80 },
         { name: 'Angular', level: 75 },
