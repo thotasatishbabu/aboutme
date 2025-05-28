@@ -16,7 +16,7 @@ const About: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto mb-8"></div>
           <p className="text-lg text-slate-700 dark:text-slate-300">
-            I'm a passionate tech professional with a decade of experience in designing and implementing innovative solutions.
+            I'm a vgggggggggggggpassionate tech professional with a decade of experience in designing and implementing innovative solutions.
           </p>
         </div>
 
