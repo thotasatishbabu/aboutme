@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Download } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 mb-10 md:mb-0">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 dark:text-white mb-4 leading-tight">
-              <span className="block">John Doe</span>
+              <span className="block">Satish Thota</span>
               <span className="text-blue-600 dark:text-blue-400">Software Architect</span>
             </h1>
             <p className="text-lg text-slate-700 dark:text-slate-300 mb-8 max-w-lg">
@@ -22,12 +22,6 @@ const Hero: React.FC = () => {
               >
                 Get in touch <ArrowRight size={18} className="ml-2" />
               </a>
-              <a 
-                href="#" 
-                className="inline-flex items-center px-6 py-3 rounded-lg border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-              >
-                Download CV <Download size={18} className="ml-2" />
-              </a>
             </div>
           </div>
           <div className="md:w-1/2 flex justify-center">
@@ -35,7 +29,7 @@ const Hero: React.FC = () => {
               <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-xl">
                 <img 
                   src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=800"
-                  alt="John Doe" 
+                  alt="Satish Thota" 
                   className="w-full h-full object-cover"
                 />
               </div>

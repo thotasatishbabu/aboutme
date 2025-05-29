@@ -52,7 +52,7 @@ const Skills: React.FC = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-slate-50 dark:bg-slate-900">
+    <section id="skills" className="py-20 bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Technical Skills</h2>
@@ -66,15 +66,23 @@ const Skills: React.FC = () => {
           {skillCategories.map((category, index) => (
             <div 
               key={index} 
-              className="bg-white dark:bg-slate-800 rounded-lg shadow-md p-6 transition-transform hover:shadow-lg hover:-translate-y-1"
+              className="group bg-white dark:bg-slate-800 rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:bg-blue-50 dark:hover:bg-slate-700 border border-transparent hover:border-blue-200 dark:hover:border-blue-800"
             >
-              <div className="flex items-center mb-4">
-                <div className="mr-3">{category.icon}</div>
-                <h3 className="text-xl font-semibold">{category.category}</h3>
+              <div className="flex items-center mb-6">
+                <div className="mr-3 p-3 bg-blue-100 dark:bg-slate-600 rounded-lg group-hover:bg-blue-200 dark:group-hover:bg-slate-500 transition-colors">
+                  {category.icon}
+                </div>
+                <h3 className="text-xl font-semibold group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  {category.category}
+                </h3>
               </div>
-              <div className="space-y-2">
+              <div className="space-y-3">
                 {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex} className="text-slate-700 dark:text-slate-300">
+                  <div 
+                    key={skillIndex} 
+                    className="flex items-center text-slate-700 dark:text-slate-300 py-2 px-3 rounded-lg bg-slate-50 dark:bg-slate-700/50 group-hover:bg-white dark:group-hover:bg-slate-600 transition-colors"
+                  >
+                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
                     {skill}
                   </div>
                 ))}
