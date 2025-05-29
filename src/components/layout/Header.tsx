@@ -35,7 +35,7 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0 font-bold text-xl">
             <a href="#" className="text-blue-600 dark:text-blue-400">
-              Satish.Dev
+              Satish Thota
             </a>
           </div>
           
