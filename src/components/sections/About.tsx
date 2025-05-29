@@ -16,44 +16,24 @@ const About: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto mb-8"></div>
           <p className="text-lg text-slate-700 dark:text-slate-300">
-            I'm a vgggggggggggggpassionate tech professional with a decade of experience in designing and implementing innovative solutions.
+            I'm a passionate tech professional with a decade of experience in designing and implementing innovative solutions.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div className="space-y-6">
-            <h3 className="text-2xl font-semibold mb-4">My Story</h3>
-            <p className="text-slate-700 dark:text-slate-300">
-              With over 10 years in the IT industry, I've evolved from a junior developer to a solutions architect, 
-              working across diverse sectors including finance, healthcare, and e-commerce.
-            </p>
-            <p className="text-slate-700 dark:text-slate-300">
-              My approach combines technical expertise with a deep understanding of business needs, 
-              allowing me to deliver solutions that drive real value and innovation.
-            </p>
-            <p className="text-slate-700 dark:text-slate-300">
-              Outside of work, I'm an active contributor to open-source projects and regularly speak at 
-              industry conferences on emerging technologies and best practices.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-2xl font-semibold mb-6">Professional Journey</h3>
-            <div className="grid grid-cols-2 gap-6">
-              {stats.map((stat, index) => (
-                <div 
-                  key={index} 
-                  className="bg-slate-50 dark:bg-slate-700 p-6 rounded-lg shadow-md text-center transform transition-transform hover:scale-105"
-                >
-                  <div className="text-blue-600 dark:text-blue-400 mb-3 flex justify-center">
-                    {stat.icon}
-                  </div>
-                  <div className="text-3xl font-bold mb-1">{stat.value}</div>
-                  <div className="text-slate-600 dark:text-slate-300 text-sm">{stat.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
+        <div className="space-y-6">
+          <h3 className="text-2xl font-semibold mb-4">My Story</h3>
+          <p className="text-slate-700 dark:text-slate-300">
+            With over 10 years in the IT industry, I've evolved from a junior developer to a solutions architect, 
+            working across diverse sectors including finance, healthcare, and e-commerce.
+          </p>
+          <p className="text-slate-700 dark:text-slate-300">
+            My approach combines technical expertise with a deep understanding of business needs, 
+            allowing me to deliver solutions that drive real value and innovation.
+          </p>
+          <p className="text-slate-700 dark:text-slate-300">
+            Outside of work, I'm an active contributor to open-source projects and regularly speak at 
+            industry conferences on emerging technologies and best practices.
+          </p>
         </div>
       </div>
     </section>

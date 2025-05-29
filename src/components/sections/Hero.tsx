@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
             <div className="relative">
               <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-xl">
                 <img 
-                  src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg"
                   alt="Satish Thota" 
                   className="w-full h-full object-cover"
                 />
