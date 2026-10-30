@@ -1,46 +1,211 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Professional portfolio of John Doe, Software Architect with 10+ years of experience in IT technology" />
-    
-    <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Satish Thota | Software Engineer" />
-    <meta property="og:description" content="Professional portfolio of John Doe, Software Architect with 10+ years of experience in IT technology" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://johndoe.github.io/" />
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- SEO -->
-    <title>John Doe | Software Architect</title>
-    <meta name="keywords" content="software architect, full stack developer, tech lead, web development, system design" />
-    <meta name="author" content="John Doe" />
-    <meta name="robots" content="index, follow" />
-    
-    <!-- Theme Color for Browser -->
-    <meta name="theme-color" content="#2563eb" />
-  </head>
-  <body class="font-sans">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    
-    <!-- Google Analytics (Replace UA-XXXXX-Y with your tracking ID) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-XXXXX-Y');
-    </script>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Satish T | Senior C++ Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--bg:#ffffff;--card:#f5f8fc;--line:#dde4ee;--text:#1b2433;--muted:#485468;--primary:#0b6bcb;--accent:#f59e0b;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Lato',Calibri,Arial,sans-serif;background:#e4e9f1;color:var(--text);line-height:1.5;font-size:13px}
+.ic{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.ic.f{fill:currentColor;stroke:none}
+.sheet{width:210mm;height:297mm;margin:1.5rem auto;display:flex;flex-direction:column;background:var(--bg);border:1px solid var(--line);box-shadow:0 10px 40px rgba(20,35,60,.18);overflow:hidden}
+.hero{text-align:center;padding:16px 20px 14px;border-bottom:1px solid var(--line);background:radial-gradient(ellipse 50% 90% at 50% 0%,rgba(11,107,203,.08),transparent)}
+.hero h1{font-weight:700;letter-spacing:-.02em;font-size:30px;line-height:1.1;margin-bottom:4px;background:linear-gradient(90deg,#0b6bcb,#5b3fd0);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--primary);letter-spacing:.14em;text-transform:uppercase;font-size:10px;font-weight:600}
+.wrap{flex:1;padding:6px 28px;display:flex;flex-direction:column;justify-content:space-evenly}
+h2{color:var(--primary);font-size:17px;font-weight:700;letter-spacing:-.01em;margin-bottom:9px}
+h2::after{content:'';display:block;width:36px;height:2px;background:var(--accent);border-radius:2px;margin-top:4px}
+.grid{display:grid;gap:10px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:11px 14px}
+h3{display:flex;align-items:center;gap:6px;font-size:14px;color:var(--primary);margin-bottom:7px}
+.card>p{color:var(--muted);margin-bottom:8px}
+ul{list-style:none}
+li{position:relative;padding-left:13px;margin-bottom:5px;color:var(--muted);break-inside:avoid}
+li::before{content:'';position:absolute;left:0;top:.62em;width:5px;height:5px;border-radius:50%;background:var(--accent)}
+li strong{color:var(--text);font-weight:600}
+.cols{columns:2;column-gap:20px}
+.contact{display:flex;gap:10px;flex-wrap:wrap}
+.contact a{display:flex;align-items:center;gap:7px;padding:6px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--text);text-decoration:none;font-weight:500}
+.contact a:hover{border-color:var(--primary);color:var(--primary)}
+.contact .ic{color:var(--primary)}
+footer{padding:9px;text-align:center;font-size:10px;color:var(--muted);border-top:1px solid var(--line)}
+@media(max-width:850px){
+  body{font-size:13px}
+  .sheet{width:100%;height:auto;margin:0;border:0}
+  .wrap{padding:8px 16px 20px;gap:22px}
+  .g3,.g2{grid-template-columns:1fr}
+  .cols{columns:1}
+}
+@page{size:A4;margin:0}
+@media print{body{background:var(--bg)}.sheet{margin:0;box-shadow:none;border:0}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="chip" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></symbol>
+  <symbol id="tools" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+  <symbol id="cloud" viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></symbol>
+  <symbol id="rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></symbol>
+  <symbol id="board" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+  <symbol id="mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+  <symbol id="in" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></symbol>
+  <symbol id="gh" viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></symbol>
+</svg>
+
+<div class="sheet">
+<header class="hero">
+  <h1>Satish Babu Thota</h1>
+  <p>Senior C++ Engineer</p>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>Professional Profile</h2>
+    <div class="card">
+      <h3>Expertise</h3>
+      <p>Seasoned C++ specialist with 10+ years of experience in system-level programming, performance optimization, and complex problem-solving across financial, telecom, and healthcare domains.</p>
+      <ul class="cols">
+        <li><strong>Programming Languages:</strong> Expert in C++ (Windows Platform), STL, MFC, VC++, Win32,C#, Azure skilled in Python</li>
+        <li><strong>Operating Systems:</strong> Deep understanding of Windows</li>
+        <li><strong>Software Development:</strong> Proficient in requirement analysis, software design, code implementation, unit testing, and technical documentation</li>
+        <li><strong>Scripting &amp; Automation:</strong> Experienced in creating custom Bash scripts for Linux/Unix environments</li>
+        <li><strong>Frameworks &amp; Middleware:</strong> Hands-on with COM, ATL, and various middleware technologies</li>
+        <li><strong>Networking &amp; Protocols:</strong> Solid grasp of TCP/IP, XML, HTTP protocols</li>
+        <li><strong>Development Tools:</strong> Proficient in Git, Jenkins, SVN, Perforce, Bugzilla, WinDbg, Wireshark, ProcMon, Fiddler</li>
+        <li><strong>Methodologies:</strong> Agile (Scrum, Kanban), Iterative and Waterfall models; Jira, Confluence, Microsoft Project</li>
+        <li><strong>Identity Management:</strong> OpenID implementation with Azure, Okta, Ping Identity, Keycloak</li>
+        <li><strong>Testing:</strong> Unit tests with CppUnit, UnitTest++ (90%+ code coverage)</li>
+        <li><strong>Design:</strong> UML diagrams and OO design principles</li>
+        <li><strong>Leadership:</strong> Certified SAFe Agile Scrum Master with excellent communication skills</li>
+        <li><strong>Customer Support:</strong> 24/7 on-call production support for airline clients</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Technical Mastery</h2>
+    <div class="grid g3">
+      <div class="card">
+        <h3><svg class="ic"><use href="#chip"/></svg>Core Technologies</h3>
+        <ul>
+          <li>C++14,17, VC++, MFC, Win32 API, COM, ATL</li>
+          <li>Boost, STL, Template Metaprogramming</li>
+          <li>Multi-threading, Synchronization</li>
+          <li>Memory Management, Performance Tuning</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><svg class="ic"><use href="#tools"/></svg>Development Ecosystem</h3>
+        <ul>
+          <li>Visual Studio, Windbg, Wireshark</li>
+          <li>Jenkins, Git, CI/CD Pipelines</li>
+          <li>SQL Server, Oracle, Query Optimization</li>
+          <li>Crash Dump Analysis, Symbol Servers</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><svg class="ic"><use href="#cloud"/></svg>Emerging Skills</h3>
+        <ul>
+          <li>Azure Cloud Services &amp; Architecture</li>
+          <li>Microservices, Docker, Kubernetes</li>
+          <li>Modern C++ Features &amp; Patterns</li>
+          <li>Cross-platform Development</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Professional Vision</h2>
+    <div class="grid g2">
+      <div class="card">
+        <h3><svg class="ic"><use href="#rocket"/></svg>Technical Goals</h3>
+        <ul>
+          <li>Master cloud-native C++ development patterns</li>
+          <li>Develop expertise in distributed systems architecture</li>
+          <li>Create reusable frameworks for high-performance computing</li>
+          <li>Pioneer C++ best practices for modern development teams</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><svg class="ic"><use href="#board"/></svg>Leadership Goals</h3>
+        <ul>
+          <li>Mentor the next generation of C++ engineers</li>
+          <li>Establish technical excellence standards</li>
+          <li>Bridge business objectives with technical strategy</li>
+          <li>Contribute to open-source C++ projects</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Connect With Me</h2>
+    <div class="contact">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=thotasatishbabu@gmail.com" target="_blank" rel="noopener"><svg class="ic"><use href="#mail"/></svg>Email</a>
+      <a href="https://www.linkedin.com/in/thosatishbabu/" target="_blank" rel="noopener"><svg class="ic f"><use href="#in"/></svg>LinkedIn</a>
+      <a href="https://github.com/thotasatishbabu" target="_blank" rel="noopener"><svg class="ic f"><use href="#gh"/></svg>GitHub</a>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="yr">2025</span> Satish... All rights reserved.<span id="views" hidden> · <b id="vc"></b> views</span></footer>
+</div>
+<script>
+(function () {
+  // ---- SETTINGS ----
+  var FORMSPREE_ID = 'xrpplwny';              // from formspree.io (step 2 in the instructions)
+  var COUNTER_KEY  = 'thotasatishbabu-portfolio'; // any unique name for your counter
+
+  // Year updates itself
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  function get(s, k) { try { return window[s].getItem(k); } catch (e) { return null; } }
+  function set(s, k, v) { try { window[s].setItem(k, v); } catch (e) {} }
+
+  // Open your site once with ?me=1 to stop counting/notifying your own visits
+  if (location.search.indexOf('me=1') > -1) set('localStorage', 'owner', '1');
+  var owner = get('localStorage', 'owner') === '1';
+  var seen  = get('sessionStorage', 'seen') === '1';
+
+  // View counter: counts once per visit, not on every refresh
+  var base = 'https://api.counterapi.dev/v1/' + COUNTER_KEY + '/views';
+  fetch(owner || seen ? base : base + '/up')
+    .then(function (r) { return r.json(); })
+    .then(function (d) {
+      if (d && typeof d.count === 'number') {
+        document.getElementById('vc').textContent = d.count.toLocaleString();
+        document.getElementById('views').hidden = false;
+      }
+    })
+    .catch(function () {});
+
+  // Email notification: once per visit, never for you
+  if (!owner && !seen && FORMSPREE_ID !== 'YOUR_FORM_ID') {
+    fetch('https://formspree.io/f/' + FORMSPREE_ID, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        subject: 'Someone viewed your portfolio',
+        time: new Date().toString(),
+        referrer: document.referrer || 'direct',
+        language: navigator.language,
+        screen: screen.width + 'x' + screen.height,
+        browser: navigator.userAgent
+      })
+    }).catch(function () {});
+  }
+  set('sessionStorage', 'seen', '1');
+})();
+</script>
+</body>
 </html>
